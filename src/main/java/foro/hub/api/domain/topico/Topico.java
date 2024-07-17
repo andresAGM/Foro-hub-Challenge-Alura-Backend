@@ -42,4 +42,20 @@ public class Topico
 
     public Topico(String titulo, String mensaje, String curso, Long aLong) {
     }
+
+    public void actualizarDatos(DatosActualizarTopicoDTO datos)
+    {
+        if(datos.titulo() != null)
+            this.titulo = datos.titulo();
+        if(datos.mensaje() != null)
+            this.mensaje = datos.mensaje();
+        if(datos.status() != null)
+            this.status = datos.status();
+        if(datos.curso() != null)
+            this.curso = datos.curso();
+    }
+
+    public void desactivarTopico() {
+        this.status = false;
+    }
 }

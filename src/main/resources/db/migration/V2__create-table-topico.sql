@@ -6,5 +6,7 @@ CREATE TABLE topico(
    status TINYINT NOT NULL,
    author_id BIGINT NOT NULL,
    curso VARCHAR(255) NOT NULL,
+   UNIQUE KEY unique_mensaje (mensaje(255)),
+   UNIQUE KEY unique_titulo (titulo(255)),
    CONSTRAINT fk_topico_usuario_id FOREIGN KEY (author_id) REFERENCES usuarios(id)
 );
