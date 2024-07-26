@@ -3,6 +3,7 @@ package foro.hub.api.controller;
 import foro.hub.api.domain.topico.*;
 import foro.hub.api.domain.usuario.UsuarioRepository;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,8 @@ import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping("/topicos")
+//security
+@SecurityRequirement(name = "bearer-key")
 public class TopicoController
 {
     @Autowired

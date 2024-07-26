@@ -5,8 +5,9 @@
 
 ### Funciones:
 - Crear Topico
-- Actualizar Topoco
+- Actualizar Topico
 - Editar Topico
 - Eliminar Topico
 - Listar Todos los Topicos
 - Listar Topico por id
+- Login de usuarios
